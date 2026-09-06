@@ -503,7 +503,7 @@
           '</div>' +
           '<select class="admin-status" aria-label="Status for ' + esc(svc.name) + '">' + opts + '</select>' +
           '<div class="admin-row-actions">' +
-            '<button class="btn btn--sm btn--ghost" data-action="randomize" title="Simulate 90-day history">' + diceIcon() + '</button>' +
+            '<button class="btn btn--sm btn--ghost" data-action="randomize" title="Simulate 90-day history" aria-label="Simulate 90-day history for ' + esc(svc.name) + '">' + diceIcon() + '</button>' +
             '<button class="btn btn--sm btn--ghost" data-action="edit" aria-label="Edit ' + esc(svc.name) + '">' + editIcon() + '</button>' +
             '<button class="btn btn--sm btn--ghost" data-action="delete" aria-label="Delete ' + esc(svc.name) + '">' + trashIcon() + '</button>' +
           '</div>' +
@@ -529,8 +529,8 @@
             '</span>' +
           '</div>' +
           '<div class="admin-row-actions">' +
-            (resolved ? '' : '<button class="btn btn--sm btn--ghost" data-action="update" title="Post update">' + chatIcon() + '</button>') +
-            (resolved ? '' : '<button class="btn btn--sm btn--ghost" data-action="resolve" title="Resolve incident">' + checkIcon() + '</button>') +
+            (resolved ? '' : '<button class="btn btn--sm btn--ghost" data-action="update" title="Post update" aria-label="Post update for ' + esc(inc.title) + '">' + chatIcon() + '</button>') +
+            (resolved ? '' : '<button class="btn btn--sm btn--ghost" data-action="resolve" title="Resolve incident" aria-label="Resolve incident: ' + esc(inc.title) + '">' + checkIcon() + '</button>') +
             '<button class="btn btn--sm btn--ghost" data-action="edit-inc" aria-label="Edit incident">' + editIcon() + '</button>' +
             '<button class="btn btn--sm btn--ghost" data-action="delete-inc" aria-label="Delete incident">' + trashIcon() + '</button>' +
           '</div>' +
